@@ -1,0 +1,22 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "freeCodeCamp certification project",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w ./scss/main.scss ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olexivas/landing-page.git"
+  },
+  "author": "Olexivas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olexivas/landing-page/issues"
+  },
+  "homepage": "https://github.com/Olexivas/landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
