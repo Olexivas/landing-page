@@ -1,5 +1,202 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+
+    #header {
+        position: fixed;
+        top: 0;
+        min-height: 75px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #eee;
+
+        .logo {
+            width: 60vw;
+
+            #header-img {
+                max-width: 300px;
+                width: 100%;
+            }
+        }
+
+        #nav-bar {
+            width: 35vw;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    #hero {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #email {
+                margin: 20px 0;
+                width: 275px;
+                height: 30px;
+                padding: 5px;
+            }
+
+            #submit {
+                text-transform: uppercase;
+                font-weight: 700;
+                width: 150px;
+                height: 30px;
+                margin: 15px 0;
+                border: 0;
+                background-color: #f1c40f;
+            }
+        }
+    }
+
+    .container {
+        max-width: 1000px;
+
+        margin: 0 auto;
+
+        #features {
+            .grid {
+                display: flex;
+
+                .icon {
+                    height: 125px;
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: darkorange;
+                }
+
+                .desc {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 80%;
+                    height: 125px;
+                }
+            }
+        }
+
+        #how-it-works {
+            display: flex;
+            justify-content: center;
+
+            #video {
+                max-width: 560px;
+                width: 100%;
+            }
+        }
+
+        #pricing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+
+            .product {
+                border: 1px solid #000;
+                border-radius: 3px;
+                margin: 10px;
+                width: 33%;
+                text-align: center;
+
+                .level {
+                    padding: 15px;
+                    background-color: #ddd;
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                h2 {
+                    margin-top: 15px;
+                }
+
+                ol {
+                    list-style: none;
+                    margin: 15px;
+
+                    li {
+                        padding: 5px 0;
+                    }
+                }
+
+                .btn {
+                    height: 40px;
+                    padding: 0 20px;
+                    margin: 15px 0;
+                    background-color: #f1c40f;
+                    text-transform: uppercase;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: orange;
+                        transition: all 1s;
+                    }
+                }
+            }
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #ddd;
+            padding: 20px;
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+
+                li {
+                    padding: 0 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+
+            span {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 5px;
+                color: #444;
+                font-size: .9rem;
+            }
+        }
+    }
 }

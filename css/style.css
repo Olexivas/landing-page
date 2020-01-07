@@ -1,4 +1,136 @@
 * {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif; }
+
+#page-wrapper {
+  position: relative; }
+  #page-wrapper #header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee; }
+    #page-wrapper #header .logo {
+      width: 60vw; }
+      #page-wrapper #header .logo #header-img {
+        max-width: 300px;
+        width: 100%; }
+    #page-wrapper #header #nav-bar {
+      width: 35vw; }
+      #page-wrapper #header #nav-bar ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none; }
+        #page-wrapper #header #nav-bar ul li a {
+          text-decoration: none;
+          color: #000; }
+  #page-wrapper #hero {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px; }
+    #page-wrapper #hero #form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #page-wrapper #hero #form #email {
+        margin: 20px 0;
+        width: 275px;
+        height: 30px;
+        padding: 5px; }
+      #page-wrapper #hero #form #submit {
+        text-transform: uppercase;
+        font-weight: 700;
+        width: 150px;
+        height: 30px;
+        margin: 15px 0;
+        border: 0;
+        background-color: #f1c40f; }
+  #page-wrapper .container {
+    max-width: 1000px;
+    margin: 0 auto; }
+    #page-wrapper .container #features .grid {
+      display: flex; }
+      #page-wrapper .container #features .grid .icon {
+        height: 125px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: darkorange; }
+      #page-wrapper .container #features .grid .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 125px; }
+    #page-wrapper .container #how-it-works {
+      display: flex;
+      justify-content: center; }
+      #page-wrapper .container #how-it-works #video {
+        max-width: 560px;
+        width: 100%; }
+    #page-wrapper .container #pricing {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px; }
+      #page-wrapper .container #pricing .product {
+        border: 1px solid #000;
+        border-radius: 3px;
+        margin: 10px;
+        width: 33%;
+        text-align: center; }
+        #page-wrapper .container #pricing .product .level {
+          padding: 15px;
+          background-color: #ddd;
+          color: black;
+          text-transform: uppercase;
+          font-weight: bold; }
+        #page-wrapper .container #pricing .product h2 {
+          margin-top: 15px; }
+        #page-wrapper .container #pricing .product ol {
+          list-style: none;
+          margin: 15px; }
+          #page-wrapper .container #pricing .product ol li {
+            padding: 5px 0; }
+        #page-wrapper .container #pricing .product .btn {
+          height: 40px;
+          padding: 0 20px;
+          margin: 15px 0;
+          background-color: #f1c40f;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer; }
+          #page-wrapper .container #pricing .product .btn:hover {
+            background-color: orange;
+            transition: all 1s; }
+    #page-wrapper .container footer {
+      margin-top: 30px;
+      background-color: #ddd;
+      padding: 20px; }
+      #page-wrapper .container footer ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none; }
+        #page-wrapper .container footer ul li {
+          padding: 0 10px; }
+          #page-wrapper .container footer ul li a {
+            text-decoration: none;
+            color: #000; }
+      #page-wrapper .container footer span {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        color: #444;
+        font-size: .9rem; }
